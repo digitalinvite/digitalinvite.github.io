@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Digital Invites</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Hello</h1>
+<body class="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center px-4">
+  <div class="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md text-center">
+    
+    <!-- Profile Image -->
+    <img 
+      src="https://i.ibb.co/yB02Qbpx/IMG-8896.jpg" 
+      alt="AI Image of Elaine with pink hair" 
+      class="w-28 h-28 mx-auto rounded-full mb-4 shadow-md object-cover"
+    />
+
+    <!-- Description -->
+    <h1 class="text-xl font-semibold mb-1">Hi, I'm Elaine!</h1>
+    <p class="text-gray-600 mb-6 text-sm">I'm a web developer, graphic designer, and mama. I make simple custom websites and digital invites—designed in Canva, then hand-coded by me. </p>
+    <p class="text-gray-600 mb-6 text-sm">Want your own site or invite? Reach out below!</p>
+
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/xovdbprg" method="POST" class="space-y-4 text-left">
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Your Email or Phone</label>
+        <input type="text" name="contact" required 
+          class="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Subject</label>
+        <input type="text" name="subject" required 
+          class="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Message</label>
+        <textarea name="message" rows="4" required 
+          class="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+      </div>
+      <button type="submit" 
+        class="w-full bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-700 transition">
+        Send Message
+      </button>
+    </form>
+  </div>
 </body>
 </html>
